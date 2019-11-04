@@ -1,4 +1,4 @@
-from .Component import Component
+from .component import *
 
 # Fuselage consists of three sections: Nose, CentreFuselage, Afterbody.
 

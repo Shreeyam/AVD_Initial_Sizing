@@ -1,4 +1,4 @@
-from .Component import Component
+from .component import *
 class Engine(Component):
 	def __init__(self):
 

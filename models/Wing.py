@@ -1,4 +1,4 @@
-from .Component import Component
+from .component import *
 
 class Wing(Component):
 

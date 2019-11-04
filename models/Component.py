@@ -1,8 +1,8 @@
 class Component():
 
     def __init__(self):
-
-        pass
+        self.weight = 0
+        self.cg = 0
 
     def __repr__(self):
         out = f'\n Object: {self.__class__.__name__}'
@@ -13,3 +13,7 @@ class Component():
             out += f'\n{k} \t {val}'
 
         return out
+
+    def calculateWeight():
+        return 0
+

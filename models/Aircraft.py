@@ -1,4 +1,14 @@
-from .Component import Component
+from .component import *
+from .afterbody import *
+from .centreFuselage import *
+from .engine import *
+from .fuselage import *
+from .horizontalStabilizer import *
+from .nose import *
+from .primitives import *
+from .verticalStabilizer import *
+from .wing import *
+
 
 class Aircraft(Component):
 	def __init__(self, fuselage, wing, engines, tail):
@@ -12,16 +22,7 @@ class Aircraft(Component):
 		self.TW = None
 		self.MTOW = None
 
-	@property
-	def TW(self):
-		self._TW = self.engines._thrust/self._MTOW
-		return self._TW
+	def __init__(self, definition):
+		# Create aircraft from definitions class
 
-	@TW.setter
-	def TW(self, TW):
-		raise AssertionError('Cant Set TW directly')
-
-	@property
-	def MTOW(self):
-		#self._MTOW =
-		raise NotImplementedError()
+		pass
