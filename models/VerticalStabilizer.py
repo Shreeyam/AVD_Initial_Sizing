@@ -1,8 +1,6 @@
-from .component import *
+from .liftDevice import *
 
-class VerticalStabilizer(Component):
-	def __init__(self):
-
-		self._loc_x = None
-		self._loc_z = None
-		self._area = None
+class VerticalStabilizer(LiftDevice):
+	def __init__(self, taper_ratio, aspect_ratio, sweep, lift_curve, zero_lift, C_HT):
+		super().__init__(0, taper_ratio, aspect_ratio, sweep, lift_curve, zero_lift)
+		self.C_HT = C_HT

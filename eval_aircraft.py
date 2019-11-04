@@ -1,6 +1,10 @@
 import numpy as np
-import models.aircraft
-import definitions
+from models.aircraft import *
+from definitions import *
 
+defs = Definitions()
 
+aircraft = Aircraft(defs)
+
+print(aircraft)
 

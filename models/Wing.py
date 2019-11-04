@@ -1,13 +1,7 @@
-from .component import *
+from .liftDevice import *
 
-class Wing(Component):
+class Wing(LiftDevice):
+	def __init__(self, area, taper_ratio, aspect_ratio, sweep, lift_curve, zero_lift, dihedral):
+		super().__init__(area, taper_ratio, aspect_ratio, sweep, lift_curve, zero_lift)
+		self.dihedral = dihedral
 
-	def __init__(self):
-
-		self._loc_x = None
-		self._loc_z = None
-		self._sweep = None
-		self._taperRatio = None
-		self._area = None
-		self._aspectRatio = None
-		self._dihedral = None

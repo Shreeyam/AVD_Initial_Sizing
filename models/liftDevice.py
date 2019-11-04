@@ -1,7 +1,7 @@
 from .component import *
 
 class LiftDevice(Component):
-	def __init__(area, taper_ratio, aspect_ratio, sweep, lift_curve, zero_lift):
+	def __init__(self, area, taper_ratio, aspect_ratio, sweep, lift_curve, zero_lift):
 		self.area = area
 		self.taper_ratio = taper_ratio
 		self.aspect_ratio = aspect_ratio
@@ -11,8 +11,9 @@ class LiftDevice(Component):
 
 	@property
 	def mac(self):
-		pass		
+		return c_root() * (2/3) * (1 + taper_ratio + taper_ratio ** 2)/(1 + taper_ratio)		
 
+	# TODO
 	@property	
 	def c_root(self):
 		pass

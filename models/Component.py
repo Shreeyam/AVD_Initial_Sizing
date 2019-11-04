@@ -14,6 +14,3 @@ class Component():
 
         return out
 
-    def calculateWeight():
-        return 0
-
