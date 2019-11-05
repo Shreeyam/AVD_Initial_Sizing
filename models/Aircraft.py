@@ -41,7 +41,8 @@ class Aircraft(Component):
 			Nose(
 				defs.noseLength,
 				defs.D
-			)
+			),
+			defs.L
 		)
 
 
