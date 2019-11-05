@@ -1,6 +1,9 @@
+from .primitives import *
+
 class Component():
 
     def __init__(self):
+        self.location = Vector(0, 0, 0)
         self.weight = 0
         self.cg = 0
 
@@ -13,4 +16,9 @@ class Component():
             out += f'\n{k} \t {val}'
 
         return out
+
+    def calculate_weight(W0):
+        raise NotImplementedError()
+
+
 

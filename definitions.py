@@ -45,6 +45,7 @@ class Definitions:
 		# Thickness to chord ratio
 		self.tc = 0.15
 		self.dihedral = 5 * u.deg
+		self.Nz = 3
 
 		# Flapped area
 		self.SfS = 0.6

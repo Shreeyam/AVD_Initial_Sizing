@@ -11,7 +11,6 @@ from .wing import *
 
 import numpy as np
 
-
 class Aircraft(Component):
 	def __init__(self, fuselage, wing, engines, tail):
 
@@ -64,7 +63,8 @@ class Aircraft(Component):
 			defs.Λ,
 			defs.α,
 			defs.α_0,
-			defs.dihedral
+			defs.dihedral,
+			defs.N_z
 		)
 
 		# Instance horizontal stabilizer
